@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\DelegateController;
+use App\Http\Controllers\GalleryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,15 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('documents', DocumentController::class);
     Route::get('/documents', [DocumentController::class, 'index'])->name('documents');
 });
+
+Route::get('/hinhanh', [GalleryController::class, 'index'])->name('galleries');
+Route::get('/hinhanh_andien', [GalleryController::class, 'an_dien'])->name('an_dien');
+Route::get('/hinhanh_chanhphuhoa', [GalleryController::class, 'chanh_phu_hoa'])->name('chanh_phu_hoa');
+Route::get('/hinhanh_hoaloi', [GalleryController::class, 'hoa_loi'])->name('hoa_loi');
+Route::get('/hinhanh_myphuoc', [GalleryController::class, 'my_phuoc'])->name('my_phuoc');
+Route::get('/hinhanh_phuan', [GalleryController::class, 'phu_an'])->name('phu_an');
+Route::get('/hinhanh_antay', [GalleryController::class, 'an_tay'])->name('an_tay');
+Route::get('/hinhanh_tandinh', [GalleryController::class, 'tan_dinh'])->name('tan_dinh');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('delegates', DelegateController::class);

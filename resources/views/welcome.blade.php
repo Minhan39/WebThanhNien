@@ -91,7 +91,7 @@
 
     <!--Content starts-->
     <div class="content flex">
-      <a href="#" target="_top" class="button"
+      <a href="{{route('galleries')}}" target="_top" class="button"
         ><img src="{{asset('images/thumbnail_1.jpg')}}" /><span
           style="text-transform: uppercase"
           >Hình ảnh</span
