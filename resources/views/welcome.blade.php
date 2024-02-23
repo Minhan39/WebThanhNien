@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @vite('resources/css/styles.css')
     <style>
+      .button img{
+        height: 80px !important;
+        width: auto !important;
+      }
       @media (max-width: 768px){
         .content{
           margin-top: 24vh;
@@ -109,7 +113,7 @@
         ></a
       >
       <a href="#" target="_top" class="button"
-        ><img src="{{asset('images/thumbnail_4.png')}}" /><span
+        ><img src="{{asset('images/thumbnail_4.jpg')}}" /><span
           style="text-transform: uppercase"
           >FANPAGE</span
         ></a
