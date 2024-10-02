@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Document extends Model
+class Image extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'image',
-        'pdf',
-        'name',
-    ];
+      'path',
+      'is_show',
+      'name',
+  ];
 }

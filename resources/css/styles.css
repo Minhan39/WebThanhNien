@@ -80,16 +80,16 @@ footer {
 .button {
     flex-direction: column;
     display: flex;
-    background-color: #ececec;
+    background-color: #e8e9eb;
     padding: 8px;
-    margin: 4px;
+    margin: 0px 8px 0px 8px;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.1px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    width: 160px;
-    border-radius: 4px;
+    width: 120px;
+    border-radius: 16px;
     align-items: center;
 }
 
@@ -217,6 +217,8 @@ footer {
     }
     .button {
         font-size: 15px;
+        width: 80px;
+        margin-bottom: 16px;
     }
     .waves {
         height: 15vh;

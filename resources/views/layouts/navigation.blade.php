@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('delegates')" :active="request()->routeIs('delegates')">
                         {{ __('Thẻ đại biểu') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('photo')" :active="request()->routeIs('photo')">
+                        {{ __('Ảnh hoạt động') }}
+                    </x-nav-link>
                 </div>
             </div>
 

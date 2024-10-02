@@ -39,13 +39,11 @@ class DocumentController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
             'pdf' => 'required|mimes:pdf',
             'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
         ]);
 
         $document = new Document();
 
         $document->name = $request->name;
-        $document->description = $request->description;
 
         // Handle file uploads (image and pdf)
         $document->image = 'images/' . $request->file('image')->hashName();
@@ -83,11 +81,9 @@ class DocumentController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
         ]);
 
         $document->name = $request->name;
-        $document->description = $request->description;
 
         // Update file uploads only if new files are provided
         if ($request->hasFile('image')) {
