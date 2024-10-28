@@ -46,6 +46,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
   Route::resource('photo', PhotoController::class);
+  Route::post('/photos/multiple', [PhotoController::class, 'storeMultiple'])->name('photo.storeMultiple');
+  Route::delete('/photos/destroy-all', [PhotoController::class, 'destroyAll'])->name('photo.destroyAll');
   Route::get('/photo', [PhotoController::class, 'index'])->name('photo');
 });
 

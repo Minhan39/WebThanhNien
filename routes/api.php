@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DelegateController;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/slide', [DelegateController::class, 'find']);
+
+Route::group(['middleware' => 'cors'], function () {
+  Route::get('/art-galleries-3d', [PhotoController::class, 'indexApi']);
+});
+

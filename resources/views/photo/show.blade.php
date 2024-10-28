@@ -24,7 +24,7 @@
                         <span>{{ $photo->is_show ? 'Có' : 'Không' }}</span>
                     </div>
 
-                    <a href="{{ route('photo.edit', $photo->id) }}" class="btn btn-warning">Chỉnh sửa</a>
+                    <!-- <a href="{{ route('photo.edit', $photo->id) }}" class="btn btn-warning">Chỉnh sửa</a> -->
 
                     <form action="{{ route('photo.destroy', $photo->id) }}" method="POST" style="display: inline-block;">
                         @csrf

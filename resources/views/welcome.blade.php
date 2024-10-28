@@ -113,9 +113,11 @@
   <div class="content flex menu">
     <a href="{{route('galleries')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_1.jpg')}}" /><span
         style="text-transform: uppercase">Hình ảnh</span></a>
+    <a href=" http://127.0.0.1:9966" target="_top" class="button"><img src="{{asset('images/thumbnail_6.png')}}" /><span
+        style="text-transform: uppercase">Triển lãm</span></a>
     <a href="{{route('vankien')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_2.jpg')}}" /><span style="text-transform: uppercase">Văn kiện</span></a>
-    <a href="{{route('delegates.search.form')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_3.jpg')}}" /><span
-        style="text-transform: uppercase">Thẻ đại biểu</span></a>
+    <!-- <a href="{{route('delegates.search.form')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_3.jpg')}}" /><span
+        style="text-transform: uppercase">Thẻ đại biểu</span></a> -->
     <a href="#" target="_top" class="button"><img src="{{asset('images/thumbnail_4.jpg')}}" /><span
         style="text-transform: uppercase">FANPAGE</span></a>
     <a href="#" target="_top" class="button"><img src="{{asset('images/thumbnail_5.jpg')}}" /><span
