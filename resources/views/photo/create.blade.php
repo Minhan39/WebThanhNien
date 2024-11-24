@@ -26,6 +26,21 @@
                         </div>
 
                         <div class="mb-4">
+                            <label for="alt" class="block text-gray-700 text-sm font-bold mb-2">Mô tả thay thế (Alt):</label>
+                            <input type="text" name="alt" id="alt" class="form-input w-full" placeholder="Mô tả ngắn gọn về hình ảnh">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Mô tả chi tiết:</label>
+                            <textarea name="description" id="description" rows="3" class="form-input w-full" placeholder="Mô tả chi tiết về hình ảnh"></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="order" class="block text-gray-700 text-sm font-bold mb-2">Thứ tự hiển thị:</label>
+                            <input type="number" name="order" id="order" class="form-input w-full" min="0" value="0">
+                        </div>
+
+                        <div class="mb-4">
                             <label for="is_show" class="block text-gray-700 text-sm font-bold mb-2">Hiển thị:</label>
                             <select name="is_show" id="is_show" class="form-input w-full" required>
                                 <option value="1">Có</option>

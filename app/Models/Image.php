@@ -11,7 +11,15 @@ class Image extends Model
 
     protected $fillable = [
       'path',
-      'is_show',
       'name',
+      'alt',
+      'description',
+      'is_show',
+      'order',
+  ];
+
+  protected $attributes = [
+    'is_show' => true,
+    'order' => 0,
   ];
 }

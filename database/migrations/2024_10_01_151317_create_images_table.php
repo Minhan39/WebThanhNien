@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->string('path');
-            $table->string('name');
-            $table->boolean('is_show');
+            $table->string('path')->comment('Đường dẫn của hình ảnh');
+            $table->string('name')->comment('Tên hình ảnh');
+            $table->string('alt')->nullable()->comment('Mô tả thay thế cho hình ảnh');
+            $table->text('description')->nullable()->comment('Mô tả chi tiết về hình ảnh');
+            $table->boolean('is_show')->default(true)->comment('Trạng thái hiển thị');
+            $table->integer('order')->default(0)->comment('Thứ tự sắp xếp');
             $table->timestamps();
         });
     }

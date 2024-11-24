@@ -69,17 +69,22 @@
         <h5 class="text-lg font-semibold">Thêm Nhiều Hình Ảnh</h5>
         <button id="closeModal" class="text-gray-500 hover:text-gray-700">&times;</button>
       </div>
-      <form action="{{ route('photo.storeMultiple') }}" method="POST" enctype="multipart/form-data">
+      <form id="uploadForm" action="{{ route('photo.storeMultiple') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mt-4">
           <label for="images" class="block text-sm font-medium text-gray-700">Chọn hình ảnh (có thể chọn nhiều)</label>
-          <input type="file" name="images[]" id="images" multiple required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50">
+          <input type="file" name="images[]" id="images" multiple required 
+                 class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50"
+                 accept="image/*">
+          <div id="selectedFiles" class="mt-2 text-sm text-gray-600"></div>
           @error('images')
           <span class="text-red-500 text-sm">{{ $message }}</span>
           @enderror
         </div>
         <div class="mt-6 flex justify-end">
-          <button type="submit" class="px-4 py-2 bg-blue-600 text-blue rounded hover:bg-blue-700">Tải lên</button>
+          <button type="submit" class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-black hover:text-white transition-colors duration-200">
+            Tải lên
+          </button>
         </div>
       </form>
     </div>

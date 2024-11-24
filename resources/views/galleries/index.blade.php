@@ -47,26 +47,29 @@
       <div class="carousel-images">
         @forelse($images as $image)
         @php
-        // Sử dụng switch-case để chọn lớp CSS dựa trên index % 4
-        switch ($loop->index % 4) {
-        case 0:
-        case 1:
-        $class = 'card_small';
-        break;
-        case 2:
-        $class = 'card_medium';
-        break;
-        case 3:
-        $class = 'card_large';
-        break;
-        }
+            // Tạo số ngẫu nhiên từ 0 đến 3
+            $randomIndex = rand(0, 3);
+            
+            // Sử dụng switch-case với số ngẫu nhiên
+            switch ($randomIndex) {
+                case 0:
+                case 1:
+                    $class = 'card_small';
+                    break;
+                case 2:
+                    $class = 'card_medium';
+                    break;
+                case 3:
+                    $class = 'card_large';
+                    break;
+            }
         @endphp
 
         <div class="{{ $class }} card_exp">
           <img
             class="img_card"
             src="{{ asset('storage/' . $image->path) }}"
-            alt="" />
+            alt="{{ $image->alt ?? '' }}" />
         </div>
 
         @empty

@@ -41,7 +41,9 @@ class PhotoController extends Controller
 
   public function gallery()
   {
-    $images = Image::where('is_show', true)->get();
+    $images = Image::where('is_show', true)
+        ->orderBy('order', 'asc')
+        ->get();
     return view('galleries.index', compact('images'));
   }
 
@@ -61,17 +63,28 @@ class PhotoController extends Controller
     $request->validate([
       'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
       'name' => 'required|string|max:255',
+      'alt' => 'nullable|string|max:255',
+      'description' => 'nullable|string|max:1000',
       'is_show' => 'required|boolean',
+      'order' => 'nullable|integer|min:0',
     ]);
 
     $image = new Image();
 
     $image->name = $request->name;
+    $image->alt = $request->alt;
+    $image->description = $request->description;
     $image->is_show = $request->is_show;
+    $image->order = $request->order ?? 0;
 
-    // Handle image upload
-    $image->path = 'images/' . $request->file('image')->hashName();
-    $request->file('image')->storeAs('public', $image->path);
+    // Handle image upload and convert to WebP
+    $originalImage = \Intervention\Image\Facades\Image::make($request->file('image'));
+    $filename = uniqid() . '.webp';
+    $image->path = 'images/' . $filename;
+    
+    // Lưu ảnh WebP với chất lượng 80%
+    $originalImage->encode('webp', 80)
+        ->save(storage_path('app/public/' . $image->path));
 
     $image->save();
 
@@ -83,6 +96,9 @@ class PhotoController extends Controller
     $currentData['images'][] = [
       'title' => $image->name,
       'file' => basename($image->path),
+      'alt' => $image->alt,
+      'description' => $image->description,
+      'order' => $image->order,
     ];
 
     // Save the updated JSON back to the file
@@ -110,9 +126,14 @@ class PhotoController extends Controller
       $image->name = $imageFile->getClientOriginalName(); // Tên file gốc
       $image->is_show = true; // Đặt is_show là true
 
-      // Xử lý tải lên hình ảnh
-      $image->path = 'images/' . $imageFile->hashName();
-      $imageFile->storeAs('public', $image->path);
+      // Xử lý tải lên và chuyển đổi sang WebP
+      $originalImage = \Intervention\Image\Facades\Image::make($imageFile);
+      $filename = uniqid() . '.webp';
+      $image->path = 'images/' . $filename;
+      
+      // Lưu ảnh WebP với chất lượng 80%
+      $originalImage->encode('webp', 80)
+          ->save(storage_path('app/public/' . $image->path));
 
       $image->save();
 
