@@ -18,6 +18,14 @@
                         <strong>Hình ảnh:</strong><br>
                         <img src="{{ asset('storage/' . $photo->path) }}" alt="{{ $photo->name }}" class="max-w-full" style="height: 160px; width: auto;">
                     </div>
+                    
+                    @if ($photo->audio_path)
+                        <strong>Âm thanh:</strong><br>
+                        <audio controls>
+                            <source src="{{ asset('storage/' . $photo->audio_path) }}" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    @endif
 
                     <div class="mb-4">
                         <strong>Hiển thị:</strong><br>

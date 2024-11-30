@@ -11,6 +11,7 @@ class Image extends Model
 
     protected $fillable = [
       'path',
+      'audio_path',
       'name',
       'alt',
       'description',
