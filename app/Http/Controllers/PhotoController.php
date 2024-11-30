@@ -62,6 +62,7 @@ class PhotoController extends Controller
   {
     $request->validate([
       'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+      'audio' => 'nullable|mimes:mp3,wav,ogg|max:10240',
       'name' => 'required|string|max:255',
       'alt' => 'nullable|string|max:255',
       'description' => 'nullable|string|max:1000',
@@ -81,10 +82,27 @@ class PhotoController extends Controller
     $originalImage = \Intervention\Image\Facades\Image::make($request->file('image'));
     $filename = uniqid() . '.webp';
     $image->path = 'images/' . $filename;
+
+    // Đảm bảo thư mục lưu trữ tồn tại
+    if (!file_exists(storage_path('app/public/images'))) {
+      mkdir(storage_path('app/public/images'), 0777, true);
+    }
     
     // Lưu ảnh WebP với chất lượng 80%
     $originalImage->encode('webp', 80)
         ->save(storage_path('app/public/' . $image->path));
+
+    // Lưu âm thanh (nếu có)
+    if ($request->hasFile('audio')) {
+      $audio = $request->file('audio');
+      $audioFilename = uniqid() . '.' . $audio->getClientOriginalExtension(); // Lấy phần mở rộng của file âm thanh
+      $audioPath = 'audios/' . $audioFilename;
+      
+      // Lưu file âm thanh vào storage
+      $audio->storeAs('public/' . dirname($audioPath), basename($audioPath));
+
+      $image->audio_path = $audioPath;
+    }
 
     $image->save();
 
@@ -96,6 +114,7 @@ class PhotoController extends Controller
     $currentData['images'][] = [
       'title' => $image->name,
       'file' => basename($image->path),
+      'audio' => basename($image->audio_path),
       'alt' => $image->alt,
       'description' => $image->description,
       'order' => $image->order,
@@ -108,47 +127,59 @@ class PhotoController extends Controller
   }
 
   public function storeMultiple(Request $request)
-  {
+{
     $request->validate([
-      'images' => 'required|array',
-      'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:10240',
+        'images' => 'required|array',
+        'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:10240',
+        'audios.*' => 'nullable|mimes:mp3,wav,aac|max:10240',
     ]);
 
-    // Lấy danh sách hình ảnh đã tải lên
+    // Lấy danh sách hình ảnh và âm thanh đã tải lên
     $uploadedImages = $request->file('images');
+    $uploadedAudios = $request->file('audios', []);
     $jsonPath = 'public/images/images.json';
     $currentData = Storage::exists($jsonPath) ? json_decode(Storage::get($jsonPath), true) : ['images' => []];
 
-    foreach ($uploadedImages as $imageFile) {
-      $image = new Image();
+    foreach ($uploadedImages as $index => $imageFile) {
+        $image = new Image();
 
-      // Gán các giá trị cho hình ảnh
-      $image->name = $imageFile->getClientOriginalName(); // Tên file gốc
-      $image->is_show = true; // Đặt is_show là true
+        // Gán các giá trị cho hình ảnh
+        $image->name = $imageFile->getClientOriginalName();
+        $image->is_show = true;
 
-      // Xử lý tải lên và chuyển đổi sang WebP
-      $originalImage = \Intervention\Image\Facades\Image::make($imageFile);
-      $filename = uniqid() . '.webp';
-      $image->path = 'images/' . $filename;
-      
-      // Lưu ảnh WebP với chất lượng 80%
-      $originalImage->encode('webp', 80)
-          ->save(storage_path('app/public/' . $image->path));
+        // Xử lý tải lên và chuyển đổi sang WebP
+        $originalImage = \Intervention\Image\Facades\Image::make($imageFile);
+        $filename = uniqid() . '.webp';
+        $image->path = 'images/' . $filename;
 
-      $image->save();
+        // Lưu ảnh WebP với chất lượng 80%
+        $originalImage->encode('webp', 80)
+            ->save(storage_path('app/public/' . $image->path));
 
-      // Thêm mục hình ảnh mới vào cấu trúc JSON
-      $currentData['images'][] = [
-        'title' => $image->name,
-        'file' => basename($image->path),
-      ];
+        $audioPath = null;
+        if (isset($uploadedAudios[$index])) {
+            $audioFile = $uploadedAudios[$index];
+            $audioFilename = uniqid() . '.' . $audioFile->getClientOriginalExtension();
+            $audioPath = 'audios/' . $audioFilename;
+            $audioFile->storeAs('public/' . dirname($audioPath), basename($audioPath));
+        }
+
+        $image->audio_path = $audioPath; // Lưu đường dẫn âm thanh
+        $image->save();
+
+        // Thêm mục hình ảnh mới vào cấu trúc JSON
+        $currentData['images'][] = [
+            'title' => $image->name,
+            'file' => basename($image->path),
+            'audio' => $audioPath ? basename($audioPath) : null,
+        ];
     }
 
     // Lưu dữ liệu JSON cập nhật lại vào file
     Storage::put($jsonPath, json_encode($currentData, JSON_PRETTY_PRINT));
 
-    return redirect()->route('photo')->with('success', 'Images uploaded successfully');
-  }
+    return redirect()->route('photo')->with('success', 'Images and audios uploaded successfully');
+}
 
   /**
    * Display the specified resource.

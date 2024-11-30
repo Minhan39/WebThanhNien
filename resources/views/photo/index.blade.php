@@ -64,7 +64,7 @@
 
   <!-- Modal Thêm Nhiều Hình Ảnh -->
   <div id="uploadImagesModal" class="fixed inset-0 z-50 hidden justify-center items-center bg-black bg-opacity-50">
-    <div class="bg-white rounded-lg p-6 max-w-md w-full" style="margin: 32px auto;">
+    <div class="bg-white rounded-lg p-6 max-w-xl w-full" style="margin: 32px auto;">
       <div class="flex justify-between items-center">
         <h5 class="text-lg font-semibold">Thêm Nhiều Hình Ảnh</h5>
         <button id="closeModal" class="text-gray-500 hover:text-gray-700">&times;</button>
@@ -80,6 +80,10 @@
           @error('images')
           <span class="text-red-500 text-sm">{{ $message }}</span>
           @enderror
+        </div>
+        <!-- Phần hiển thị hình ảnh đã chọn kèm input âm thanh -->
+        <div id="selectedFiles" class="mt-4 space-y-4">
+          <!-- JS sẽ thêm các phần tử tại đây -->
         </div>
         <div class="mt-6 flex justify-end">
           <button type="submit" class="px-4 py-2 bg-white text-black border border-black rounded hover:bg-black hover:text-white transition-colors duration-200">
@@ -106,5 +110,49 @@
         modal.classList.add('hidden');
       }
     };
+    
+    document.getElementById('images').addEventListener('change', function(event) {
+      const files = event.target.files;
+      const selectedFilesContainer = document.getElementById('selectedFiles');
+      selectedFilesContainer.innerHTML = ''; // Xóa nội dung cũ
+
+      Array.from(files).forEach((file, index) => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          // Tạo phần tử HTML để hiển thị hình ảnh và input âm thanh
+          const fileWrapper = document.createElement('div');
+          fileWrapper.classList.add('flex', 'items-center', 'space-x-6');
+
+          // Hình ảnh xem trước
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.alt = file.name;
+          img.classList.add('w-32', 'h-32', 'rounded', 'border', 'border-gray-300', 'object-cover');
+
+          // Nhãn cho input âm thanh
+          const label = document.createElement('label');
+          label.innerText = `Âm thanh cho: ${file.name}`;
+          label.classList.add('block', 'text-sm', 'font-medium', 'text-gray-700');
+
+          // Input âm thanh
+          const audioInput = document.createElement('input');
+          audioInput.type = 'file';
+          audioInput.name = `audios[${index}]`;
+          audioInput.accept = 'audio/*';
+          audioInput.classList.add('mt-1', 'block', 'w-full', 'border-gray-300', 'rounded-md', 'shadow-sm', 'focus:ring', 'focus:ring-opacity-50');
+
+          // Kết hợp label và input
+          const inputWrapper = document.createElement('div');
+          inputWrapper.appendChild(label);
+          inputWrapper.appendChild(audioInput);
+
+          // Gộp tất cả vào thẻ fileWrapper
+          fileWrapper.appendChild(img);
+          fileWrapper.appendChild(inputWrapper);
+          selectedFilesContainer.appendChild(fileWrapper);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
   </script>
 </x-app-layout>

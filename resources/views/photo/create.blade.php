@@ -36,6 +36,11 @@
                         </div>
 
                         <div class="mb-4">
+                            <label for="audio" class="block text-gray-700 text-sm font-bold mb-2">Tệp âm thanh:</label>
+                            <input type="file" name="audio" accept="audio/*" class="form-input w-full">
+                        </div>
+
+                        <div class="mb-4">
                             <label for="order" class="block text-gray-700 text-sm font-bold mb-2">Thứ tự hiển thị:</label>
                             <input type="number" name="order" id="order" class="form-input w-full" min="0" value="0">
                         </div>
