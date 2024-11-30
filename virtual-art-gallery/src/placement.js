@@ -1,34 +1,40 @@
-'use strict';
-const texture = require('./image');
-const mat4 = require('gl-mat4');
+"use strict";
+const texture = require("./image");
+const mat4 = require("gl-mat4");
 
 const renderDist = 20;
 const loadDist = 20;
 const unloadDist = 40;
-const fovxMargin = Math.PI/32;
+const fovxMargin = Math.PI / 32;
 
 const dynamicResPeriod = 3000;
 let dynamicRes = "high";
 let dynamicResTimer;
 
-const culling = (ppos, pangle, fovx, {vseg, angle}) => {
+const culling = (ppos, pangle, fovx, { vseg, angle }) => {
     const sx1 = vseg[0][0] - ppos[0];
     const sy1 = vseg[0][1] - ppos[2];
     const sx2 = vseg[1][0] - ppos[0];
     const sy2 = vseg[1][1] - ppos[2];
-    const angles = [angle, pangle - fovx/2 - fovxMargin + Math.PI/2, pangle + fovx/2 + fovxMargin - Math.PI/2];
-    for(let a of angles) {
+    const angles = [
+        angle,
+        pangle - fovx / 2 - fovxMargin + Math.PI / 2,
+        pangle + fovx / 2 + fovxMargin - Math.PI / 2,
+    ];
+    for (let a of angles) {
         const nx = Math.sin(a);
         const ny = -Math.cos(a);
-        if(nx * sx1 + ny * sy1 < 0 && nx * sx2 + ny * sy2 < 0)
-            return false;
+        if (nx * sx1 + ny * sy1 < 0 && nx * sx2 + ny * sy2 < 0) return false;
     }
     return true;
 };
 
-module.exports = (regl, {placements, getAreaIndex}) => {
+module.exports = (regl, { placements, getAreaIndex }) => {
     //console.log(areas);
-    let batch = [], shownBatch = [];
+    let batch = [],
+        shownBatch = [],
+        new_shownBatch = [],
+        is_same_batch = false;
     let fetching = true;
     const loadPainting = (p) => {
         const seg = placements[batch.length];
@@ -39,7 +45,11 @@ module.exports = (regl, {placements, getAreaIndex}) => {
         let globalScale = 4.5 / (3 + p.aspect); //tweaked to look good
         globalScale = Math.min(globalScale, segLen / p.aspect / 2.2); //clamp horizontal
         globalScale = Math.min(globalScale, 2 / 1.2); //clamp vertical
-        const pos = [(seg[0][0] + seg[1][0]) / 2, 2.1 - globalScale, (seg[0][1] + seg[1][1]) / 2];
+        const pos = [
+            (seg[0][0] + seg[1][0]) / 2,
+            2.1 - globalScale,
+            (seg[0][1] + seg[1][1]) / 2,
+        ];
         const angle = Math.atan2(dir[1], dir[0]);
         const horiz = Math.abs(angle % 3) < 1 ? 1 : 0;
         const vert = 1 - horiz;
@@ -47,14 +57,15 @@ module.exports = (regl, {placements, getAreaIndex}) => {
         const scale = [
             2 * width * horiz + 0.1 * vert,
             2 * globalScale,
-            2 * width * vert + 0.1 * horiz];
+            2 * width * vert + 0.1 * horiz,
+        ];
         const text = p.textGen(width);
         const d1 = width / segLen;
         const d2 = 0.005 / Math.hypot(norm[0], norm[1]);
         // Visible painting segment for culling
         const vseg = [
             [pos[0] - dir[0] * d1 * 2, pos[2] - dir[1] * d1],
-            [pos[0] + dir[0] * d1 * 2, pos[2] + dir[1] * d1]
+            [pos[0] + dir[0] * d1 * 2, pos[2] + dir[1] * d1],
         ];
         // Offset pos to account for painting width and depth
         pos[0] -= dir[0] * d1 + norm[0] * d2;
@@ -66,36 +77,144 @@ module.exports = (regl, {placements, getAreaIndex}) => {
         mat4.rotateY(model, model, -angle);
         const textmodel = [];
         mat4.fromTranslation(textmodel, [pos[0], 1.7 - globalScale, pos[2]]);
-        mat4.scale(textmodel, textmodel, [2,2,2]);
+        mat4.scale(textmodel, textmodel, [2, 2, 2]);
         mat4.rotateY(textmodel, textmodel, -angle);
-        batch.push({ ...p, vseg, angle, model, textmodel, text, width, textGen:null });
+        // batch.push({
+        //     ...p,
+        //     vseg,
+        //     angle,
+        //     model,
+        //     textmodel,
+        //     text,
+        //     width,
+        //     textGen: null,
+        // });
+        batch.push({
+            ...p,
+            vseg,
+            angle,
+            model,
+            textmodel,
+            text,
+            width,
+            textGen: null,
+            isPlus: false,
+            isChosen: false,
+            originModel: { ...model },
+        });
     };
     // Fetch the first textures
-    texture.fetch(regl, 20, dynamicRes, loadPainting, () => fetching = false);
+    texture.fetch(regl, 20, dynamicRes, loadPainting, () => (fetching = false));
     return {
         update: (pos, angle, fovX) => {
             // Estimate player position index
             let index = getAreaIndex(pos[0], pos[2], 4);
             if (index === -1) return; // Out of bound => do nothing
             // Unload far textures
-            batch.slice(0, Math.max(0, index - unloadDist)).map(t => texture.unload(t));
-            batch.slice(index + unloadDist).map(t => texture.unload(t));
+            batch
+                .slice(0, Math.max(0, index - unloadDist))
+                .map((t) => texture.unload(t));
+            batch.slice(index + unloadDist).map((t) => texture.unload(t));
+
             // Load close textures
-            shownBatch = batch.slice(Math.max(0, index - renderDist), index + renderDist);
-            shownBatch.map(t => texture.load(regl, t, dynamicRes));
+            new_shownBatch = batch.slice(
+                Math.max(0, index - renderDist),
+                index + renderDist
+            );
+            new_shownBatch.map((t) => texture.load(regl, t, dynamicRes));
             // Frustum / Orientation culling
-            shownBatch = shownBatch.filter(t => t.tex && culling(pos, angle, fovX, t));
+            new_shownBatch = new_shownBatch.filter(
+                (t) => t.tex && culling(pos, angle, fovX, t)
+            );
+
+            new_shownBatch = new_shownBatch.sort((a, b) => {
+                const distanceA = calcDistanceIn3D(
+                    [a.model[12], a.model[13], a.model[14]],
+                    pos
+                );
+                const distanceB = calcDistanceIn3D(
+                    [b.model[12], b.model[13], b.model[14]],
+                    pos
+                );
+
+                return distanceA - distanceB;
+            });
+
+            new_shownBatch = new_shownBatch
+                .map((nsb) => ({
+                    ...nsb,
+                    goToModelPos: () => {
+                        pos[0] = nsb.model[12] + 3;
+                        pos[1] = nsb.model[13];
+                        pos[2] = nsb.model[14];
+                    },
+                }))
+                .slice(0, 4);
+            //console.log\(.*\)+;
+
+            let b = false;
+            if (
+                shownBatch.length === new_shownBatch.length &&
+                new_shownBatch.length > 0 &&
+                shownBatch.length > 0
+            ) {
+                b = shownBatch.find((sb, i) => {
+                    return sb.image_id === new_shownBatch[i].image_id;
+                });
+
+                if (b) {
+                    is_same_batch = true;
+                } else {
+                    is_same_batch = false;
+                    shownBatch = new_shownBatch;
+                }
+            } else {
+                is_same_batch = false;
+                shownBatch = new_shownBatch;
+            }
+            // shownBatch = batch.slice(
+            //     Math.max(0, index - renderDist),
+            //     index + renderDist
+            // );
+            // shownBatch.map((t) => texture.load(regl, t, dynamicRes));
+            // Frustum / Orientation culling
+            // shownBatch = shownBatch.filter(
+            //     (t) => t.tex && culling(pos, angle, fovX, t)
+            // );
+
+            // console.log(shownBatch)
             // Fetch new textures
             if (index <= batch.length - loadDist) return;
             if (!fetching) {
-                texture.fetch(regl, 10, dynamicRes, loadPainting, () => fetching = false);
+                texture.fetch(
+                    regl,
+                    10,
+                    dynamicRes,
+                    loadPainting,
+                    () => (fetching = false)
+                );
                 fetching = true;
             }
             // Update dynamic resolution
             dynamicRes = "low";
             if (dynamicResTimer) clearTimeout(dynamicResTimer);
-            dynamicResTimer = setTimeout(() => dynamicRes = "high", dynamicResPeriod);
+            dynamicResTimer = setTimeout(
+                () => (dynamicRes = "high"),
+                dynamicResPeriod
+            );
         },
-        batch: () => shownBatch
+        batch: () => {
+          return {shownBatch, is_same_batch}
+        },
+        isSameBatch: () => is_same_batch,
     };
 };
+
+function calcDistanceIn3D(obj1, obj2) {
+    const dx = obj2[0] - obj1[0];
+    const dy = obj2[1] - obj1[1];
+    const dz = obj2[2] - obj1[2];
+    const distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
+
+    return distance;
+}

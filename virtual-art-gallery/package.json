@@ -2,6 +2,7 @@
 	"name": "virtual_art_gallery",
 	"description": "Explore an art gallery in your browser.",
 	"version": "1.0.0",
+	"type": "module",
 	"scripts": {
 		"start": "budo src/index.js",
 		"build": "browserify -p tinyify src/index.js | htmlify base.html > build.html",
