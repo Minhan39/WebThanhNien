@@ -44,13 +44,8 @@ async function loadImage(regl, p, res) {
 		// Resize image to a power of 2 to use mipmap (faster than createImageBitmap resizing)
 		image = await createImageBitmap(data.image);
 		ctx.drawImage(image, 0, 0, resizeCanvas.width, resizeCanvas.height);
-	} catch(e) {
-		// Try again with a lower resolution, otherwise return an empty image
-		console.error(e);
-		return res == "high" ? await loadImage(regl, p, "low") : emptyImage(regl);
-	}
 
-	return [(unusedTextures.pop() || regl.texture)({
+		return [(unusedTextures.pop() || regl.texture)({
 			data: resizeCanvas,
 			min: 'mipmap',
 			mipmap: 'nice',
@@ -58,8 +53,18 @@ async function loadImage(regl, p, res) {
 			flipY: true
 		}),
 		width=>text.init((unusedTextures.pop() || regl.texture), title, width),
-		image.width / image.height
+		image.width / image.height,
+		data.image
 	];
+
+	
+	} catch(e) {
+		// Try again with a lower resolution, otherwise return an empty image
+		console.error(e);
+		return res == "high" ? await loadImage(regl, p, "low") : emptyImage(regl);
+	}
+
+	
 }
 
 module.exports = {
@@ -74,7 +79,8 @@ module.exports = {
 					return;
 				}
 				paintingCache[p.image_id] = p;
-				loadImage(regl, p, res).then(([tex, textGen, aspect]) => {
+				loadImage(regl, p, res).then(([tex, textGen, aspect, blob]) => {
+					p.blob = blob;
 					cbOne({ ...p, tex, textGen, aspect });
 					if (--count === 0)
 						cbAll();

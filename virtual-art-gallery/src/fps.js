@@ -4,6 +4,7 @@ const vec3 = require('gl-vec3');
 const lock = require('pointer-lock');
 //const footstep = require('./footstep')();
 
+
 const mouseSensibility = 0.002;
 const touchSensibility = 0.008;
 const rotationFilter = 0.95;
@@ -24,6 +25,10 @@ const yLimitTouch = 5;
 const touchDistLimit = 40;
 const rayStep = 4;
 const tpDuration = 1;
+
+
+const paintings = document.getElementById("paintings");
+
 
 const sdLine = (p, a, b, tmp1, tmp2) => {
 	const pa = vec3.sub(tmp1, p, a);
@@ -82,8 +87,13 @@ module.exports = function ({getGridSegments, getGridParts}, fovY) {
 		let smooth = 1;
 		if (Math.abs(mouse[0]) > slowAngle && Math.sign(mouse[0]) == Math.sign(dy))
 			smooth = (limitAngle - Math.abs(mouse[0])) / (limitAngle - slowAngle);
-		mouse[0] += smooth * dy * sensibility;
+		// mouse[0] += smooth * dy * sensibility;
 		mouse[1] += dx * sensibility;
+
+		paintings.dataset.selected = 0;
+    if(paintings.children.length === 0) return;
+    const element = paintings.children[0];
+    element.style.color = "red";
 	};
 
 	// Mouse input
@@ -198,9 +208,9 @@ module.exports = function ({getGridSegments, getGridParts}, fovY) {
 		}
 		//console.log(e);
 	}
-	window.addEventListener('touchstart', handleTouch, {passive: false});
-	window.addEventListener('touchmove', handleTouch, {passive: false});
-	window.addEventListener('touchend', handleTouch, {passive: false});
+	document.querySelector("canvas").addEventListener('touchstart', handleTouch, {passive: false});
+	document.querySelector("canvas").addEventListener('touchmove', handleTouch, {passive: false});
+	document.querySelector("canvas").addEventListener('touchend', handleTouch, {passive: false});
 
 	// Keyboard input
 	var keys = {};
@@ -208,10 +218,10 @@ module.exports = function ({getGridSegments, getGridParts}, fovY) {
 		if (e.defaultPrevented || e.ctrlKey || e.altKey || e.metaKey) return;
 		keys[e.code] = e.type === 'keydown';
 		run = e.shiftKey;
-		const left = keys['KeyA'] || keys['ArrowLeft'] ? 1 : 0;
-		const right = keys['KeyD'] || keys['ArrowRight'] ? 1 : 0;
-		const up = keys['KeyW'] || keys['ArrowUp'] ? 1 : 0;
-		const down = keys['KeyS'] || keys['ArrowDown'] ? 1 : 0;
+		const left = keys['KeyA'] || keys['ArrowLeft1'] ? 1 : 0;
+		const right = keys['KeyD'] || keys['ArrowRight1'] ? 1 : 0;
+		const up = keys['KeyW'] || keys['ArrowUp1'] ? 1 : 0;
+		const down = keys['KeyS'] || keys['ArrowDown1'] ? 1 : 0;
 		dir = [right - left, 0, down - up];
 		e.preventDefault();
 	};
