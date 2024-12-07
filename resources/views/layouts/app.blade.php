@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/images/logo.png') }}" />
-        <title>Tuổi trẻ Bến Cát</title>
+        <title>Trường Đại học Thủ Dầu Một</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

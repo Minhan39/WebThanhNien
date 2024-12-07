@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/images/logo.png') }}" />
-    <title>Tuổi trẻ Bến Cát</title>
+    <title>Trường Đại học Thủ Dầu Một</title>
 
     <style>
       * {
@@ -116,6 +116,6 @@
         </div>
       </a>
     </div>
-    <footer>Khát vọng cống hiến, lẽ sống thanh niên</footer>
+    <footer>Đoàn kết - Ứng dụng số - Kết nối - Sáng tạo - Bản lĩnh - Kiến tạo tương lai</footer>
   </body>
 </html>

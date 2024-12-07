@@ -5,14 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/images/logo.png') }}" />
-  <title>Tuổi trẻ Bến Cát</title>
+  <title>Trường Đại học Thủ Dầu Một</title>
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   @vite('resources/css/styles.css')
   <style>
     .button img {
       height: 80px !important;
       width: auto !important;
+    }
+
+    *{
+      font-family: "Montserrat", sans-serif !important;
     }
 
     footer {
@@ -24,8 +32,7 @@
       height: 48px;
       display: flex;
       justify-content: center;
-      font-size: 14px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 0.8rem;
       line-height: 18px;
       letter-spacing: 0.7px;
       align-items: center;
@@ -66,8 +73,7 @@
     <!--Content before waves-->
     <div class="inner-header flex">
       <h1>
-        Trang tin đại hội XII<br />Thị xã Bến Cát<br /><span
-          style="text-transform: lowercase">(<i class="bi bi-hand-index-thumb-fill" style="font-size: 32px;"></i> daihoi.tuoitrebencat.com)</span>
+        <span class="large" style="color: #ffffff; font-weight: bold">ĐẠI HỘI ĐẠI BIỂU</span><br/><span class="medium" style="color: #ffff00; font-weight: bold">ĐOÀN TNCS HỒ CHÍ MINH TRƯỜNG ĐẠI HỌC THỦ DẦU MỘT</span><br/><span class="medium" style="color: #cccccc; font-weight: normal;">LẦN THỨ VII NHIỆM KỲ 2024 - 2027</span>
       </h1>
     </div>
 
@@ -111,20 +117,20 @@
 
   <!--Content starts-->
   <div class="content flex menu">
-    <a href="{{route('galleries')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_1.jpg')}}" /><span
+    <a href="{{route('galleries')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_1.png')}}" /><span
         style="text-transform: uppercase">Hình ảnh</span></a>
-    <a href=" http://127.0.0.1:9966" target="_top" class="button"><img src="{{asset('images/thumbnail_6.png')}}" /><span
+    <a href="{{route('trienlam')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_6.png')}}" /><span
         style="text-transform: uppercase">Triển lãm</span></a>
-    <a href="{{route('vankien')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_2.jpg')}}" /><span style="text-transform: uppercase">Văn kiện</span></a>
+    <a href="{{route('vankien')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_2.png')}}" /><span style="text-transform: uppercase">Văn kiện</span></a>
     <!-- <a href="{{route('delegates.search.form')}}" target="_top" class="button"><img src="{{asset('images/thumbnail_3.jpg')}}" /><span
         style="text-transform: uppercase">Thẻ đại biểu</span></a> -->
-    <a href="#" target="_top" class="button"><img src="{{asset('images/thumbnail_4.jpg')}}" /><span
+    <a href="https://www.facebook.com/hsvdhtdm/?locale=vi_VN" target="_top" class="button"><img src="{{asset('images/thumbnail_4.png')}}" /><span
         style="text-transform: uppercase">FANPAGE</span></a>
-    <a href="#" target="_top" class="button"><img src="{{asset('images/thumbnail_5.jpg')}}" /><span
-        style="text-transform: uppercase">ZALO OA</span></a>
+    <a href="https://tuoitre.tdmu.edu.vn/" target="_top" class="button"><img src="{{asset('images/thumbnail_5.png')}}" /><span
+        style="text-transform: uppercase">WEBSITE</span></a>
   </div>
   <!--Content ends-->
-  <footer>Khát vọng cống hiến, lẽ sống thanh niên</footer>
+  <footer>Đoàn kết - Ứng dụng số - Kết nối - Sáng tạo - Bản lĩnh - Kiến tạo tương lai</footer>
 </body>
 
 </html>

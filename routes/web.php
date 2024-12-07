@@ -52,6 +52,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 Route::get('/hinhanh', [PhotoController::class, 'gallery'])->name('galleries');
+Route::get('/trienlam', [GalleryController::class, 'trien_lam'])->name('trienlam');
 // Route::get('/hinhanh_andien', [GalleryController::class, 'an_dien'])->name('an_dien');
 // Route::get('/hinhanh_chanhphuhoa', [GalleryController::class, 'chanh_phu_hoa'])->name('chanh_phu_hoa');
 // Route::get('/hinhanh_hoaloi', [GalleryController::class, 'hoa_loi'])->name('hoa_loi');

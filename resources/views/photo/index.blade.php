@@ -18,11 +18,11 @@
 
           <a href="{{ route('photo.create') }}" class="btn btn-primary mb-3">Thêm hình ảnh</a>
           <!-- Nút thêm nhiều hình ảnh -->
-          <button id="openModal" class="btn btn-secondary mb-3">Thêm nhiều hình ảnh</button>
+          <button id="openModal" class="btn btn-secondary mb-3">Thêm nhiều hình ảnh (Beta)</button>
           <form action="{{ route('photo.destroyAll') }}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xoá tất cả hình ảnh?')">Xoá Tất Cả</button>
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xoá tất cả hình ảnh?')">Xoá Tất Cả (Beta)</button>
           </form>
 
           <table class="table">

@@ -6,7 +6,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/images/logo.png') }}" />
-    <title>Tuổi trẻ Bến Cát</title>
+    <title>Trường Đại học Thủ Dầu Một</title>
     <link rel="stylesheet" href="{{asset('css/gallery.css')}}" />
   </head>
   <body>

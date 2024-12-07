@@ -1,0 +1,1942 @@
+{
+    "images": [
+        {
+            "id": "675084ad9587f",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": 0,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "675084b5c6264",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": 8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "675084c1a173c",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": -8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "675084ce7a7dd",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "675084e04f1c1",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "675084f6315f6",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "6750850309b12",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "6750850b94573",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": 14,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "67508515cda80",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": 6,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "6750851e0c3ee",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": -2,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "675085259bed0",
+            "title": "C\u00f4ng t\u00e1c gi\u00e1o d\u1ee5c",
+            "description": null,
+            "position": {
+                "x": -10,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "1"
+        },
+        {
+            "id": "6750907f595d4",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 0,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750908cb5b82",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750912ebdf9e",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750913d41b5e",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750917559f2f",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "675091c5e700b",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "675091d3c3be2",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "675091fe3938b",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 22,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750920637f87",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 14,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750920d8117b",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 6,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "67509214eabde",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -2,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750921c1404f",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -10,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "67509226ab67f",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -18,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750927123803",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 22
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "675092791a13b",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "67509283534ff",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 6
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "6750928c55a28",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 18
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "67509293b39bc",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c ch\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed3ng h\u00e0nh v\u1edbi thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 10
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "3"
+        },
+        {
+            "id": "67509320e0695",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 0,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675093286b828",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750933160b33",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750937134b8b",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750937a45edb",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750938a48c13",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509393a8d14",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675093c384cae",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -22,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675093cab52be",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -14,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675093d1d6c22",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -6,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509444b91bc",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 2,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509468ed70c",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 10,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509471961ab",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 18,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509496bbf18",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 22,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750949e56960",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 14,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675094a878d71",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 6,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675094b2350ad",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -2,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675094d1910b7",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -10,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675094ff780f9",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -18,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509523359de",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 22
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750952d360df",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509535925bf",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 6
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750953d59f8c",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": -2
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509545203a0",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": -10
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750954f387d5",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": -18
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750956a89b41",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 18
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509576d25e1",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 10
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675095806c0b6",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 2
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750958d70ceb",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": -6
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750959847bb2",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": -14
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675095a31eda1",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": -22
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675095e4d9f78",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675095ee2de45",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675095f837ad9",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": -4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509604cd66f",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": -12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750964427f37",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675096535e208",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750965bf0272",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": -4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750966642f3a",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": -12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675096e3a5588",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 0,
+                "y": 2.5,
+                "z": -0.3
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675096ee35d6b",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 8,
+                "y": 2.5,
+                "z": -0.3
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675096fa1bbfd",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -8,
+                "y": 2.5,
+                "z": -0.3
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750970cceb12",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": -4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "67509718a380f",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": -12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "6750972c6691c",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": -4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675097371d712",
+            "title": "T\u1ed5 ch\u1ee9c c\u00e1c phong tr\u00e0o h\u00e0nh \u0111\u1ed9ng c\u00e1ch m\u1ea1ng ph\u00e1t huy vai tr\u00f2 xung k\u00edch, t\u00ecnh nguy\u1ec7n, s\u00e1ng t\u1ea1o",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": -12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "2"
+        },
+        {
+            "id": "675099b0335d9",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 0,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "675099bc52906",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "675099d1c71db",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -8,
+                "y": 2.5,
+                "z": 0.3
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "675099e9721c0",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "675099f777c75",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a0153076",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a09ae9d6",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 14.7,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a16c137e",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 22,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a1e7da04",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 14,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a25da292",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 6,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a2ecf1c1",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -2,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a374dc45",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -10,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a3ee067a",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -18,
+                "y": 2.5,
+                "z": 24.8
+            },
+            "rotation": 3.14159,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a5c10b73",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 22
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a659aba8",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 14
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a6c8aafa",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": 6
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a74d5ec1",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": -2
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a7c940c6",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": -10
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a84236b0",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -24.8,
+                "y": 2.5,
+                "z": -18
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a9611f3a",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 18
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509a9ddc005",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 10
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509aa692e0d",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": 2
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509aaeee04b",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": -6
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509ab791955",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": -14
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509ac00d3f9",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 24.8,
+                "y": 2.5,
+                "z": -22
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509ada3aeaf",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509ae213ab1",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509aeaea437",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": -4
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509b20bd175",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 15.3,
+                "y": 2.5,
+                "z": -12
+            },
+            "rotation": 1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509b4c8b814",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": 12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509b59267ff",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": 4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509b616bf01",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": -4
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509b8832550",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -15.3,
+                "y": 2.5,
+                "z": -12
+            },
+            "rotation": -1.5708,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509bbdca7fe",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -22,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509bc5e44df",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -14,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509bcd62548",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": -6,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509bd50a54f",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 2,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509bdd277ab",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 10,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        },
+        {
+            "id": "67509be5e2027",
+            "title": "C\u00f4ng t\u00e1c x\u00e2y d\u1ef1ng \u0110o\u00e0n, m\u1edf r\u1ed9ng m\u1eb7t tr\u1eadn \u0111o\u00e0n k\u1ebft t\u1eadp h\u1ee3p thanh ni\u00ean",
+            "description": null,
+            "position": {
+                "x": 18,
+                "y": 2.5,
+                "z": -24.8
+            },
+            "rotation": 0,
+            "size": {
+                "width": 4,
+                "height": 3
+            },
+            "audio": null,
+            "room": "4"
+        }
+    ]
+}

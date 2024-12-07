@@ -25,6 +25,9 @@
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <script src="js/flipbook.min.js"></script>
 
@@ -89,14 +92,21 @@
       background-color: #f6f6f6;
     }
 
+    *{
+      font-family: "Montserrat", sans-serif !important;
+      margin: 0;
+      padding: auto;
+    }
+
     h1 {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: 700;
       letter-spacing: 0.5px;
       line-height: 40px;
-      font-size: 36px;
+      font-size: 1.5rem !important;
       margin: 0;
       text-transform: uppercase;
+      padding: 8px 0px;
     }
 
     .bookshelf .thumb {
@@ -136,25 +146,29 @@
     }
 
     footer {
-      background-color: #f4f4f4;
-      position: fixed !important;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-      height: 48px;
-      display: flex;
-      justify-content: center;
-      font-size: 14px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 18px;
-      letter-spacing: 0.7px;
-      align-items: center;
-      padding: 0px !important;
-      margin: 0px;
+    background-color: #f4f4f4;
+    position: fixed !important;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 16px;
     }
+}
   </style>
   <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/images/logo.png') }}" />
-  <title>Tuổi trẻ Bến Cát</title>
+  <title>Trường Đại học Thủ Dầu Một</title>
 </head>
 
 <body>
@@ -183,7 +197,7 @@
       </div>
       <img class="shelf-img" src="{{ Vite::asset('resources/images/shelf_wood.png') }}" />
     </div>
-    <footer>Khát vọng cống hiến, lẽ sống thanh niên</footer>
+    <footer>Đoàn kết - Ứng dụng số - Kết nối - Sáng tạo - Bản lĩnh - Kiến tạo tương lai</footer>
   </div>
   <!-- <div class="shelf">
       <div class="bookshelf">

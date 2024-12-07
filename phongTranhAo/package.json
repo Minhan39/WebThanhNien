@@ -1,0 +1,12 @@
+{
+  "name": "virtual-gallery",
+  "version": "1.0.0",
+  "description": "Virtual Art Gallery using Three.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+} 

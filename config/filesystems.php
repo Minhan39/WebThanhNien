@@ -71,7 +71,8 @@ return [
 
   'links' => [
     public_path('storage') => storage_path('app/public'),
-    base_path('virtual-art-gallery/images') => storage_path('app/public/images'),
+    // base_path('virtual-art-gallery/images') => storage_path('app/public/images'),
+    base_path('phongTranhAo/public/images') => storage_path('app/public/images'),
   ],
 
 ];

@@ -45,6 +45,10 @@ class GalleryController extends Controller
     {
         return view('galleries.an_tay');
     }
+    public function trien_lam()
+    {
+        return view('galleries.sub_galleries');
+    }
 
     /**
      * Show the form for creating a new resource.

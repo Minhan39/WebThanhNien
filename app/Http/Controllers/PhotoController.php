@@ -83,14 +83,15 @@ class PhotoController extends Controller
     $filename = uniqid() . '.webp';
     $image->path = 'images/' . $filename;
 
-    // Đảm bảo thư mục lưu trữ tồn tại
-    if (!file_exists(storage_path('app/public/images'))) {
-      mkdir(storage_path('app/public/images'), 0777, true);
+    // Đảm bảo thư mục storage/app/public/images tồn tại và có quyền ghi
+    $storagePath = storage_path('app/public/images');
+    if (!file_exists($storagePath)) {
+        mkdir($storagePath, 0755, true);
     }
     
-    // Lưu ảnh WebP với chất lượng 80%
-    $originalImage->encode('webp', 80)
-        ->save(storage_path('app/public/' . $image->path));
+    // Sử dụng đường dẫn đầy đủ và đúng format
+    $fullPath = $storagePath . DIRECTORY_SEPARATOR . $filename;
+    $originalImage->encode('webp', 80)->save($fullPath);
 
     // Lưu âm thanh (nếu có)
     if ($request->hasFile('audio')) {
@@ -111,13 +112,23 @@ class PhotoController extends Controller
     $currentData = Storage::exists($jsonPath) ? json_decode(Storage::get($jsonPath), true) : ['images' => []];
 
     // Add new image entry to the JSON structure
+    $defaultLocation = json_decode($request->location);
     $currentData['images'][] = [
+      'id' => pathinfo($image->path, PATHINFO_FILENAME),
       'title' => $image->name,
-      'file' => basename($image->path),
-      'audio' => basename($image->audio_path),
-      'alt' => $image->alt,
       'description' => $image->description,
-      'order' => $image->order,
+      'position' => [
+        'x' => $defaultLocation->x ?? 0,
+        'y' =>  $defaultLocation->y ?? 0,
+        'z' => $defaultLocation->z ?? 0,
+      ],
+      'rotation' => $defaultLocation->rotation ?? 0,
+      'size' => [
+        'width' => (int) $request->width,
+        'height' => (int) $request->height,
+      ],
+      'audio' => $request->hasFile('audio') ? basename($audioPath) : null,
+      'room' => $request->room,
     ];
 
     // Save the updated JSON back to the file
@@ -168,9 +179,21 @@ class PhotoController extends Controller
         $image->save();
 
         // Thêm mục hình ảnh mới vào cấu trúc JSON
+        $defaultLocation = json_decode($image->location);
         $currentData['images'][] = [
-            'title' => $image->name,
-            'file' => basename($image->path),
+            'id' => basename($image->path),
+            'title' => pathinfo($image->name, PATHINFO_FILENAME),
+            'description' => $image->description,
+            'position' => [
+              'x' => $defaultLocation->x,
+              'y' =>  $defaultLocation->y,
+              'z' => $defaultLocation->z,
+            ],
+            'rotation' => $defaultLocation->rotation,
+            'size' => [
+              'width' => (int) $image->width,
+              'height' => (int) $image->height,
+            ],
             'audio' => $audioPath ? basename($audioPath) : null,
         ];
     }
@@ -228,6 +251,16 @@ class PhotoController extends Controller
    */
   public function destroy(Image $photo)
   {
+    // Xóa file ảnh nếu tồn tại
+    if (Storage::exists('public/' . $photo->path)) {
+      Storage::delete('public/' . $photo->path);
+    }
+
+    // Xóa file âm thanh nếu tồn tại
+    if ($photo->audio_path && Storage::exists('public/' . $photo->audio_path)) {
+      Storage::delete('public/' . $photo->audio_path);
+    }
+
     $photo->delete();
 
     // Path to the JSON file
